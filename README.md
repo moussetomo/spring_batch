@@ -11,5 +11,5 @@
 
 ## Note
 This program reads input file from src/main/resources/scores.txt.
-And it automatically creates table if not any, and write data to it.
+And it automatically creates table if not any, and writes data to it.
 Test program drops and creates new table for each run.
