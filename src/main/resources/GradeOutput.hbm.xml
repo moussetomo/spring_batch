@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="im360.beans.GradeOutput" table="grades">
+    <composite-id>
+        <key-property name="studentId" type="int">
+        	<column name="student_id" />
+        </key-property>
+        <key-property name="courseId" type="string">
+        	<column name="course_id" length="50" />
+        </key-property>
+    </composite-id>
+    <property name="score" not-null="true" type="int">
+      <column name="score" />
+    </property>
+    <property name="grade" not-null="true" type="string">
+      <column name="grade" length="2" />
+    </property>
+  </class>
+</hibernate-mapping>
